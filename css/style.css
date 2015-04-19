@@ -13,6 +13,7 @@ body {
 }
 span.navy {
   color: #1ab394;
+  font-weight: bold;
 }
 p.text-color {
   color: #676a6c;
@@ -143,13 +144,16 @@ h1 {
 -------------------------------------------------- */
 .header-back {
   height: 470px;
-  width: 100%;
+  /* width: 100%; */
 }
 .header-back.one {
-  background: url('../img/header_one.jpg') 50% 0 no-repeat;
+  background: url('../img/harri_kauhanen.jpg') 50% 0 no-repeat;
 }
 .header-back.two {
-  background: url('../img/header_two.jpg') 50% 0 no-repeat;
+  background: url('../img/harri_kauhanen_2.jpg') 50% 0 no-repeat;
+}
+.header-back.three {
+  background: url('../img/harri_kauhanen_4.jpg') 50% 0 no-repeat;
 }
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -217,7 +221,7 @@ h1 {
 }
 .carousel-caption {
   position: absolute;
-  top: 100px;
+  top: 165px;
   left: 0;
   bottom: auto;
   right: auto;
@@ -234,17 +238,32 @@ h1 {
 .carousel-indicators {
   padding-right: 60px;
 }
+
+.carousel-caption {
+  text-shadow: none;
+}
+
 .carousel-caption h1 {
-  font-weight: 700;
-  font-size: 38px;
-  text-transform: uppercase;
+  font-family: 'Engagement', cursive;
+  font-weight: 400;
+  font-size: 90px;
+  /* text-transform: uppercase;*/
   text-shadow: none;
   letter-spacing: -1.5px;
+  color: white;
+  text-shadow: 0 0 2px rgba(255,255,255,1), 0 0 15px #999;
+
 }
 .carousel-caption p {
   font-weight: 700;
   text-transform: uppercase;
   text-shadow: none;
+  width: 60%;
+  text-shadow: 0 0 1px #9AE6E4;
+}
+
+.carousel-caption .more {
+  margin-top: 130px;
 }
 .caption-link {
   color: #fff;
@@ -276,8 +295,14 @@ h1 {
 .features small {
   color: #1ab394;
 }
+
+.features h1 {
+  font-size: 40px;
+  margin: 16px 0 30px 0;
+}
+
 .features h2 {
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 5px;
 }
 .features-text-alone {
@@ -290,6 +315,53 @@ h1 {
   color: #1ab394;
   font-size: 40px;
 }
+
+.features-icon-smaller {
+  color: #1ab394;
+  font-size: 25px;
+}
+
+.feature-items {
+  list-style: none;
+  padding-left: 0;
+}
+
+.feature-items li {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.feature-items li::after {
+  content: " | ";
+  opacity: 0.4;
+  margin: 0 0.2em;
+}
+
+.feature-items li:last-of-type::after {
+  content: "";
+}
+
+.carousel .feature-items {
+  width: 60%
+}
+
+.carousel .feature-items li {
+  color: #1ab394;
+  font-size: 15px;
+  text-transform: uppercase;
+  /* text-shadow: 0 0 3px #333; */
+  letter-spacing: 0.2em;
+}
+
+.features .feature-items li {
+  color: #aeaeae;
+  font-size: 13px;
+}
+
+.features .feature-items li a {
+  color: #aeaeae;
+}
+
 .navy-section {
   margin-top: 60px;
   background: #1ab394;
@@ -439,6 +511,7 @@ fieldset[disabled] .btn-primary.active {
   .navbar-wrapper .navbar {
     border-radius: 4px;
   }
+
   /* Bump up size of carousel content */
   .carousel-caption p {
     margin-bottom: 20px;
@@ -449,19 +522,37 @@ fieldset[disabled] .btn-primary.active {
     font-size: 50px;
   }
 }
+
+@media (min-width: 1920px) {
+  .header-back.one {
+    width: 100%;
+    background-size: 100%;
+  }
+}
+
 @media (max-width: 992px) {
   .carousel-image {
     display: none;
   }
 }
+
+@media (max-width: 575px) {
+  .carousel-caption h1 {
+    font-size: 55px;
+    white-space: normal;
+  }
+
+
+  .features h1 {
+    font-size: 28px;
+  }
+}
+
 @media (max-width: 768px) {
   .carousel-caption,
   .carousel-caption.blank {
     left: 5%;
-    top: 80px;
-  }
-  .carousel-caption h1 {
-    font-size: 28px;
+    /* top: 80px; */
   }
   .navbar.navbar-scroll .navbar-brand {
     margin-top: 6px;
