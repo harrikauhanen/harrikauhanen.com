@@ -50,7 +50,7 @@ h1 {
 .header-back.one {
   background: url('../img/harri_kauhanen.jpg') 50% 0 no-repeat;
 }
-}
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /* Carousel base class */
@@ -343,8 +343,20 @@ fieldset[disabled] .btn-primary.active {
 }
 
 @media (max-width: 992px) {
-  .carousel-image {
-    display: none;
+  .header-back {
+    height: 370px;
+  }
+  .header-back.one {
+    background: url('../img/harri_kauhanen.jpg') 52% 0 no-repeat;
+  }
+  .carousel {
+    height: 370px;
+  }
+  .carousel .item {
+    height: 370px;
+  }
+  .carousel-caption {
+    top: 105px;
   }
 }
 
