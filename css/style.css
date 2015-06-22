@@ -144,16 +144,10 @@ h1 {
 -------------------------------------------------- */
 .header-back {
   height: 470px;
-  /* width: 100%; */
 }
 .header-back.one {
   background: url('../img/harri_kauhanen.jpg') 50% 0 no-repeat;
 }
-.header-back.two {
-  background: url('../img/harri_kauhanen_2.jpg') 50% 0 no-repeat;
-}
-.header-back.three {
-  background: url('../img/harri_kauhanen_4.jpg') 50% 0 no-repeat;
 }
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -247,7 +241,6 @@ h1 {
   font-family: 'Engagement', cursive;
   font-weight: 400;
   font-size: 90px;
-  /* text-transform: uppercase;*/
   text-shadow: none;
   letter-spacing: -1.5px;
   color: white;
@@ -844,20 +837,4 @@ fieldset[disabled] .btn-primary.active {
 .space-30 {
   margin: 30px 0;
 }
-/* PACE PLUGIN
--------------------------------------------------- */
-.pace .pace-progress {
-  background: #fff;
-  position: fixed;
-  z-index: 2000;
-  top: 0;
-  left: 0;
-  height: 2px;
-  -webkit-transition: width 1s;
-  -moz-transition: width 1s;
-  -o-transition: width 1s;
-  transition: width 1s;
-}
-.pace-inactive {
-  display: none;
-}
+
