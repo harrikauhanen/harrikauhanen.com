@@ -620,3 +620,14 @@ fieldset[disabled] .btn-primary.active {
   margin: 30px 0;
 }
 
+@media print {
+  .teaser-img { 
+    display: none;
+  }
+
+  .social-icon >li {
+    display: block;
+    margin-top: 20px;
+  }
+}
+
