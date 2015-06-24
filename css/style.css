@@ -290,8 +290,14 @@ h1 {
   color: #FFFFFF;
   font-size: 14px;
   padding: 10px 20px;
-  font-weight: 600;
+  font-weight: 300;
+  margin-top: 15px;
 }
+.btn-primary small {
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
