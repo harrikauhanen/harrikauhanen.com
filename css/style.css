@@ -639,3 +639,10 @@ fieldset[disabled] .btn-primary.active {
   }
 }
 
+#portfolio-gif {
+  margin-top: 50px;
+}
+
+#portfolio-gif img  {
+  max-width: 200px;
+}
